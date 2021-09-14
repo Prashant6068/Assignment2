@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOMMERCE</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-around">
+          <a class="navbar-brand logo" href="#"
+            ><span>B</span><span>K</span><span>S</span><span>shop</span></a
+          >
+          <div class="middle">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse middle-navbar"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active target text-info text-info"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Picnic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Promotion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+
+                <li class="nav-item desk-hide">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- carousel -->
+
+    <section class="container-fluid carosuel">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Others/clothes(5)-crop.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.vexels.com/media/users/3/194701/raw/aa72abca784117244de372b5e9926988-online-shopping-slider-template.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Others/clothes(3)-crop.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <ul class="shipping">
+        <li class="bg-info">
+          <a href="#"><i class="fas fa-plane"></i> Free shipping world-wide</a>
+        </li>
+        <li class="bg-danger">
+          <a href="#"><i class="fas fa-sync"></i> 100% money back -48hours</a>
+        </li>
+        <li class="bg-warning">
+          <a href="#"
+            ><i class="fas fa-life-ring"></i> 24/7 online shopping customer
+            support</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section class="container-justify mx-4 first-form">
+      <!-- <h1 class="m-3 text-center"></h1> -->
+      <div class="form-container">
+        
+        <div class="container-fluid edit-form">
+          <table class="contact form-group row">
+            <h1 class="m-3 text-center text-decoration-underline">CONTACT US!</h1>
+            <form
+              action="Success.html"
+              onsubmit="return validateForm()"
+              novalidate
+            >
+              <tr>
+                <td>
+                  <label for="fname" class="col-form-label col-sm-12 col-md-12"
+                    >First Name: </label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="fname"
+                    class="form-control col-sm-12 col-md-12"
+                    name="firstname"
+                    placeholder="Your name.."
+                    onblur="valid()"
+                  />
+                  <span id="err1"></span><br />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="lname" class="col-form-label col-sm-12 col-md-12"
+                    >Last Name:</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    class="form-control col-sm-12 col-md-12"
+                    placeholder="Your last name.."
+                    onblur="valid1()"
+                  />
+                  <span id="err2"></span><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email" class="col-form-label col-sm-12 col-md-12"
+                    >Email-Id:</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="abc@gmail.com"
+                    class="form-control col-sm-12 col-md-12"
+                    id="email"
+                    onblur="valid2()"
+                  />
+                  <span id="err3"></span><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="phn" class="col-form-label col-sm-12 col-md-12"
+                    >Phone No:</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control col-sm-12 col-md-12"
+                    placeholder="10-digit mobile number"
+                    id="phn"
+                    onblur="valid3()"
+                  />
+                  
+                  <span id="err4"></span><br />
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td>
+                  <label
+                    for="subject"
+                    class="col-form-label col-sm-12 col-md-12 "
+                    
+                    >FeedBack:</label
+                  >
+                </td>
+                <td>
+                 
+                  <!-- <textarea id="t1" name="" rows="3" cols="20"></textarea> -->
+                  <input type="text" class="fee">
+                </td>
+                <br /><br />
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  
+                  <input type="submit" class="btn-success" value="Submit" /> <input type="reset" class="btn-danger"/>
+                 
+
+                </td>
+              </tr>
+            </form>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured -->
+
+    <footer class="container-fluid foot">
+      <div class="footcar">
+        <li><img src="./pic1.jpg" alt="" /></li>
+
+        <li>
+          <p>
+            <i
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+              fugiat fugit doloremque soluta non perferendis magnam recusandae
+              repellat quae expedita. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Pariatur, quo.</i
+            >
+          </p>
+          
+        </li>
+        <br>
+
+        <li>
+          <h4>Prashant Mishra</h4>
+
+          <span><i>(web developer)</i></span>
+        </li>
+        <div class="footer-social-medialink">
+          <li><i class="fab fa-facebook"></i>facebook</li>
+          <li><i class="fab fa-twitter-square"></i>twitter</li>
+          <li><i class="fab fa-instagram"></i>instagram</li>
+          <li><i class="fab fa-dribbble"></i>dribbble</li>
+          <li><i class="fab fa-pinterest"></i>pinterest</li>
+        </div>
+      </div>
+      <ul class="lowersection">
+        <li>
+          <a class="navbar-brand" href="#"
+            ><span>B</span><span>K</span><span>S</span></a
+          >
+          <br /><br />
+        </li>
+        <li>
+          <p>
+            <i
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quibusdam, facere a numquam iste sit eveniet?</i
+            >
+          </p>
+        </li>
+        <br>
+
+        <ul class="banks">
+          <li>
+            <img
+              src="https://www.pngitem.com/pimgs/m/152-1521099_paypal-icon-hd-png-download.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://www.pngitem.com/pimgs/m/1-15674_visa-logo-png-transparent-visa-logo-2019-png.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://seeklogo.com/images/D/Discover_Card-logo-4BC5D7C02C-seeklogo.com.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_IdncEp2DRxsi2BVo6CkcskeCU_gHPEgPKKsPyJyUPmxZZY-4dZPus2z4w2x1seXE1Ig&usqp=CAU"
+              alt=""
+            />
+          </li>
+
+          <li>
+            <img
+              src="https://www.mastercard.com/content/dam/mccom/global/logos/logo-mastercard-mobile.svg"
+              alt=""
+            />
+          </li>
+
+          <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Maestro_logo.svg/1200px-Maestro_logo.svg.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </ul>
+
+      <ul class="copyright">
+        <li>Copyright@2021 Designed by Prashant-Mishra all rights Reserved</li>
+      </ul>
+    </footer>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./validation.js"></script>
+  </body>
+</html>
